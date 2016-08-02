@@ -12,7 +12,7 @@ fa-column="reverse nowrap" fa-layout="space-between baseline"
 `fa-row` and `fa-column` can be shorthanded and default to the flexbox defaults
 
 ```
-fa-row fa-layout="start basline"
+fa-row fa-layout="start baseline"
 ```
 
 `fa-layout` can be shorthanded to just the main axis

@@ -23,4 +23,4 @@ npm install flex-attributes
 bower install flex-attributes
 ```
 
-Add or import flex-attributes/dist/flex-attributes.css into your index or compiled css build process
+Add or import `flex-attributes/dist/flex-attributes.css` into your index or compiled css build process

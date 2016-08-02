@@ -3,7 +3,7 @@ var stylus = require('gulp-stylus');
 
 // Get one .styl file and render
 gulp.task('build', function () {
-  return gulp.src('./flex-attributes.styl')
+  return gulp.src('./src/flex-attributes.styl')
     .pipe(stylus())
     .pipe(gulp.dest('./dist/'));
 });

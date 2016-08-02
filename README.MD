@@ -1,4 +1,4 @@
-FLEX-ATTRIBUTES
+Flex Attributes
 =============
 
 This library allows you to compose layout with flexbox in html. Containers

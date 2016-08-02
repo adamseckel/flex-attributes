@@ -1,4 +1,6 @@
 FLEX-ATTRIBUTES
+=============
+
 This library allows you to compose layout with flexbox in html. Containers
 are composed by combining fa-column|fa-row with fa-layout.
 

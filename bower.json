@@ -1,7 +1,7 @@
 {
   "name": "flex-attributes",
   "authors": [
-    "aseckel <adam.seckel@gmail.com>"
+    "hemlok <adam.seckel@gmail.com>"
   ],
   "description": "A css library that allows you to compose flexbox layouts with element attributes.",
   "main": "flex-attributes.css",

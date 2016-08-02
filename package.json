@@ -1,0 +1,18 @@
+{
+  "name": "flex-attributes",
+  "version": "1.0.0",
+  "description": "A css library that allows you to compose flexbox layouts with atttributes.",
+  "main": "flex-attributes.css",
+  "keywords": [
+    "css",
+    "flexbox",
+    "attributes",
+    "layout"
+  ],
+  "author": "hemlok",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-stylus": "^2.5.0"
+  }
+}

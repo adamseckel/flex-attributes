@@ -1,0 +1,24 @@
+{
+  "name": "flex-attributes",
+  "authors": [
+    "aseckel <adam.seckel@gmail.com>"
+  ],
+  "description": "A css library that allows you to compose flexbox layouts with element attributes.",
+  "main": "flex-attributes.css",
+  "keywords": [
+    "css",
+    "stylus",
+    "flexbox",
+    "attributes",
+    "layout"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

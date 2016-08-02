@@ -1,0 +1,279 @@
+@import 'flexbox'
+
+// CONTAINERS
+// This establishes the main-axis, thus defining the direction flex items are
+// placed in the flex container. Flexbox is (aside from optional wrapping) a
+// single-direction layout concept. Think of flex items as primarily laying out
+// either in horizontal rows or vertical columns.
+
+// By default, flex items will all try to fit onto one line. You can change that
+// and allow the items to wrap as needed with this property. Direction also
+// plays a role here, determining the direction new lines are stacked in.
+
+// - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+// - FLEX COLUMN ---------------------------------------------------------------
+
+[fa-column]
+  flexbox(flex)
+  flex-direction(column)
+
+[fa-column="reverse"]
+  flexbox(flex)
+  flex-direction(column-reverse)
+
+[fa-column="wrap"]
+  flex-direction(column)
+  flex-wrap(wrap)
+
+[fa-column="nowrap"]
+  flex-direction(column)
+  flex-wrap(nowrap)
+
+[fa-column="wrap-reverse"]
+  flex-direction(column)
+  flex-wrap(wrap-reverse)
+
+[fa-column="reverse wrap"]
+  flex-direction(column-reverse)
+  flex-wrap(wrap)
+
+[fa-column="reverse nowrap"]
+  flex-direction(column-reverse)
+  flex-wrap(nowrap)
+
+[fa-column="reverse wrap-reverse"]
+  flex-direction(column-reverse)
+  flex-wrap(wrap-reverse)
+
+
+// - FLEX ROW ------------------------------------------------------------------
+
+[fa-row]
+  flexbox(flex)
+  flex-direction(row)
+
+[fa-row="reverse"]
+  flexbox(flex)
+  flex-direction(row-reverse)
+
+[fa-row="wrap"]
+  flex-direction(row)
+  flex-wrap(wrap)
+
+[fa-row="nowrap"]
+  flex-direction(row)
+  flex-wrap(nowrap)
+
+[fa-row="wrap-reverse"]
+  flex-direction(row)
+  flex-wrap(wrap-reverse)
+
+[fa-row="reverse wrap"]
+  flex-direction(row-reverse)
+  flex-wrap(wrap)
+
+[fa-row="reverse nowrap"]
+  flex-direction(row-reverse)
+  flex-wrap(nowrap)
+
+[fa-row="reverse wrap-reverse"]
+  flex-direction(row-reverse)
+  flex-wrap(wrap-reverse)
+
+
+// - LAYOUT --------------------------------------------------------------------
+// ARGUMENT 1: This defines the alignment along the main axis. It helps distribute extra
+// free space left over when either all the flex items on a line are inflexible,
+// or are flexible but have reached their maximum size. It also exerts some
+// control over the alignment of items when they overflow the line.
+
+// ARGUMENT 2: This defines the default behaviour for how flex items are laid out along the
+// cross axis on the current line. Think of it as the justify-content version
+// for the cross-axis (perpendicular to the main-axis).
+
+// - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+[fa-layout="center"]
+  justify-content(center)
+[fa-layout="start"]
+  justify-content(start)
+[fa-layout="end"]
+  justify-content(end)
+[fa-layout="space-between"]
+  justify-content(space-between)
+[fa-layout="space-around"]
+  justify-content(space-around)
+
+[fa-layout="center center"]
+  justify-content(center)
+  align-items(center)
+[fa-layout="center start"]
+  justify-content(center)
+  align-items(start)
+[fa-layout="center end"]
+  justify-content(center)
+  align-items(end)
+[fa-layout="center stretch"]
+  justify-content(center)
+  align-items(stretch)
+[fa-layout="center baseline"]
+  justify-content(center)
+  align-items(baseline)
+
+[fa-layout="start center"]
+  justify-content(start)
+  align-items(center)
+[fa-layout="start start"]
+  justify-content(start)
+  align-items(start)
+[fa-layout="start end"]
+  justify-content(start)
+  align-items(end)
+[fa-layout="start stretch"]
+  justify-content(start)
+  align-items(stretch)
+[fa-layout="start baseline"]
+  justify-content(flex-sstart)
+  align-items(baseline)
+
+[fa-layout="end center"]
+  justify-content(end)
+  align-items(center)
+[fa-layout="end start"]
+  justify-content(end)
+  align-items(start)
+[fa-layout="end end"]
+  justify-content(end)
+  align-items(end)
+[fa-layout="end stretch"]
+  justify-content(end)
+  align-items(stretch)
+[fa-layout="end baseline"]
+  justify-content(end)
+  align-items(baseline)
+
+[fa-layout="space-between center"]
+  justify-content(space-between)
+  align-items(center)
+[fa-layout="space-between start"]
+  justify-content(space-between)
+  align-items(start)
+[fa-layout="space-between end"]
+  justify-content(space-between)
+  align-items(end)
+[fa-layout="space-between stretch"]
+  justify-content(space-between)
+  align-items(stretch)
+[fa-layout="space-between baseline"]
+  justify-content(space-between)
+  align-items(basline)
+
+[fa-layout="space-around center"]
+  justify-content(space-between)
+  align-items(center)
+[fa-layout="space-around start"]
+  justify-content(space-between)
+  align-items(start)
+[fa-layout="space-around end"]
+  justify-content(space-between)
+  align-items(end)
+[fa-layout="space-around stretch"]
+  justify-content(space-between)
+  align-items(stretch)
+[fa-layout="space-around baseline"]
+  justify-content(space-between)
+  align-items(basline)
+
+// - CONTENT -------------------------------------------------------------------
+// This aligns a flex container's lines within when there is extra space in the
+// cross-axis, similar to how justify-content aligns individual items within
+// the main-axis.
+
+// Note: this property has no effect when there is only one line of flex items.
+
+// - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+[fa-content="center"]
+  align-content(center)
+[fa-content="start"]
+  align-content(start)
+[fa-content="end"]
+  align-content(end)
+[fa-content="stretch"]
+  align-content(start)
+[fa-content="space-between"]
+  align-content(space-between)
+[fa-content="space-around"]
+  align-content(space-around)
+
+
+// ITEMS
+
+// - GROW ----------------------------------------------------------------------
+// This defines the ability for a flex item to grow if necessary. It accepts a
+// unitless value that serves as a proportion. It dictates what amount of the
+// available space inside the flex container the item should take up.
+
+// If all items have flex-grow set to 1, the remaining space in the container
+// will be distributed equally to all children. If one of the children a value
+// of 2, the remaining space would take up twice as much space as the others
+// (or it will try to, at least).
+
+// - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+[fa-grow="0"]
+  flex-grow(0)
+
+[fa-grow="1"]
+  flex-grow(1)
+
+[fa-grow="2"]
+  flex-grow(2)
+
+[fa-grow="3"]
+  flex-grow(3)
+
+[fa-grow="4"]
+  flex-grow(4)
+
+[fa-grow="5"]
+  flex-grow(5)
+
+[fa-grow="6"]
+  flex-grow(6)
+
+[fa-grow="7"]
+  flex-grow(7)
+
+
+// - SHRINK --------------------------------------------------------------------
+// This defines the ability for a flex item to shrink if necessary.
+// Negative numbers are invalid.
+
+// - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+[fa-shrink="0"]
+  flex-shrink(0)
+
+[fa-shrink="1"]
+  flex-shrink(1)
+
+[fa-shrink="2"]
+  flex-shrink(2)
+
+[fa-shrink="3"]
+  flex-shrink(3)
+
+[fa-shrink="4"]
+  flex-shrink(4)
+
+[fa-shrink="5"]
+  flex-shrink(5)
+
+[fa-shrink="6"]
+  flex-shrink(6)
+
+[fa-shrink="7"]
+  flex-shrink(7)

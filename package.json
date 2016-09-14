@@ -1,7 +1,7 @@
 {
   "name": "flex-attributes",
-  "version": "1.0.0",
-  "description": "A css library that allows you to compose flexbox layouts with atttributes.",
+  "version": "1.0.1",
+  "description": "A css library that allows you to compose flexbox layouts with attributes.",
   "main": "flex-attributes.css",
   "keywords": [
     "css",

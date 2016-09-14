@@ -14,70 +14,70 @@
 
 // - FLEX COLUMN ---------------------------------------------------------------
 
-[fa-column]
+[flex-column]
   flexbox(flex)
   flex-direction(column)
 
-[fa-column="reverse"]
+[flex-column="reverse"]
   flexbox(flex)
   flex-direction(column-reverse)
 
-[fa-column="wrap"]
+[flex-column="wrap"]
   flex-direction(column)
   flex-wrap(wrap)
 
-[fa-column="nowrap"]
+[flex-column="nowrap"]
   flex-direction(column)
   flex-wrap(nowrap)
 
-[fa-column="wrap-reverse"]
+[flex-column="wrap-reverse"]
   flex-direction(column)
   flex-wrap(wrap-reverse)
 
-[fa-column="reverse wrap"]
+[flex-column="reverse wrap"]
   flex-direction(column-reverse)
   flex-wrap(wrap)
 
-[fa-column="reverse nowrap"]
+[flex-column="reverse nowrap"]
   flex-direction(column-reverse)
   flex-wrap(nowrap)
 
-[fa-column="reverse wrap-reverse"]
+[flex-column="reverse wrap-reverse"]
   flex-direction(column-reverse)
   flex-wrap(wrap-reverse)
 
 
 // - FLEX ROW ------------------------------------------------------------------
 
-[fa-row]
+[flex-row]
   flexbox(flex)
   flex-direction(row)
 
-[fa-row="reverse"]
+[flex-row="reverse"]
   flexbox(flex)
   flex-direction(row-reverse)
 
-[fa-row="wrap"]
+[flex-row="wrap"]
   flex-direction(row)
   flex-wrap(wrap)
 
-[fa-row="nowrap"]
+[flex-row="nowrap"]
   flex-direction(row)
   flex-wrap(nowrap)
 
-[fa-row="wrap-reverse"]
+[flex-row="wrap-reverse"]
   flex-direction(row)
   flex-wrap(wrap-reverse)
 
-[fa-row="reverse wrap"]
+[flex-row="reverse wrap"]
   flex-direction(row-reverse)
   flex-wrap(wrap)
 
-[fa-row="reverse nowrap"]
+[flex-row="reverse nowrap"]
   flex-direction(row-reverse)
   flex-wrap(nowrap)
 
-[fa-row="reverse wrap-reverse"]
+[flex-row="reverse wrap-reverse"]
   flex-direction(row-reverse)
   flex-wrap(wrap-reverse)
 
@@ -94,94 +94,94 @@
 
 // - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
-[fa-layout="center"]
+[flex-flow="center"]
   justify-content(center)
-[fa-layout="start"]
+[flex-flow="start"]
   justify-content(start)
-[fa-layout="end"]
+[flex-flow="end"]
   justify-content(end)
-[fa-layout="space-between"]
+[flex-flow="space-between"]
   justify-content(space-between)
-[fa-layout="space-around"]
+[flex-flow="space-around"]
   justify-content(space-around)
 
-[fa-layout="center center"]
+[flex-flow="center center"]
   justify-content(center)
   align-items(center)
-[fa-layout="center start"]
+[flex-flow="center start"]
   justify-content(center)
   align-items(start)
-[fa-layout="center end"]
+[flex-flow="center end"]
   justify-content(center)
   align-items(end)
-[fa-layout="center stretch"]
+[flex-flow="center stretch"]
   justify-content(center)
   align-items(stretch)
-[fa-layout="center baseline"]
+[flex-flow="center baseline"]
   justify-content(center)
   align-items(baseline)
 
-[fa-layout="start center"]
+[flex-flow="start center"]
   justify-content(start)
   align-items(center)
-[fa-layout="start start"]
+[flex-flow="start start"]
   justify-content(start)
   align-items(start)
-[fa-layout="start end"]
+[flex-flow="start end"]
   justify-content(start)
   align-items(end)
-[fa-layout="start stretch"]
+[flex-flow="start stretch"]
   justify-content(start)
   align-items(stretch)
-[fa-layout="start baseline"]
+[flex-flow="start baseline"]
   justify-content(flex-sstart)
   align-items(baseline)
 
-[fa-layout="end center"]
+[flex-flow="end center"]
   justify-content(end)
   align-items(center)
-[fa-layout="end start"]
+[flex-flow="end start"]
   justify-content(end)
   align-items(start)
-[fa-layout="end end"]
+[flex-flow="end end"]
   justify-content(end)
   align-items(end)
-[fa-layout="end stretch"]
+[flex-flow="end stretch"]
   justify-content(end)
   align-items(stretch)
-[fa-layout="end baseline"]
+[flex-flow="end baseline"]
   justify-content(end)
   align-items(baseline)
 
-[fa-layout="space-between center"]
+[flex-flow="space-between center"]
   justify-content(space-between)
   align-items(center)
-[fa-layout="space-between start"]
+[flex-flow="space-between start"]
   justify-content(space-between)
   align-items(start)
-[fa-layout="space-between end"]
+[flex-flow="space-between end"]
   justify-content(space-between)
   align-items(end)
-[fa-layout="space-between stretch"]
+[flex-flow="space-between stretch"]
   justify-content(space-between)
   align-items(stretch)
-[fa-layout="space-between baseline"]
+[flex-flow="space-between baseline"]
   justify-content(space-between)
   align-items(basline)
 
-[fa-layout="space-around center"]
+[flex-flow="space-around center"]
   justify-content(space-between)
   align-items(center)
-[fa-layout="space-around start"]
+[flex-flow="space-around start"]
   justify-content(space-between)
   align-items(start)
-[fa-layout="space-around end"]
+[flex-flow="space-around end"]
   justify-content(space-between)
   align-items(end)
-[fa-layout="space-around stretch"]
+[flex-flow="space-around stretch"]
   justify-content(space-between)
   align-items(stretch)
-[fa-layout="space-around baseline"]
+[flex-flow="space-around baseline"]
   justify-content(space-between)
   align-items(basline)
 
@@ -193,21 +193,9 @@
 // Note: this property has no effect when there is only one line of flex items.
 
 // - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-
-
-[fa-content="center"]
-  align-content(center)
-[fa-content="start"]
-  align-content(start)
-[fa-content="end"]
-  align-content(end)
-[fa-content="stretch"]
-  align-content(start)
-[fa-content="space-between"]
-  align-content(space-between)
-[fa-content="space-around"]
-  align-content(space-around)
-
+for $prop in center start end stretch space-between space-around
+  [flex-content=\"{$prop}\"]
+    align-content($prop)
 
 // ITEMS
 
@@ -223,30 +211,9 @@
 
 // - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
-[fa-grow="0"]
-  flex-grow(0)
-
-[fa-grow="1"]
-  flex-grow(1)
-
-[fa-grow="2"]
-  flex-grow(2)
-
-[fa-grow="3"]
-  flex-grow(3)
-
-[fa-grow="4"]
-  flex-grow(4)
-
-[fa-grow="5"]
-  flex-grow(5)
-
-[fa-grow="6"]
-  flex-grow(6)
-
-[fa-grow="7"]
-  flex-grow(7)
-
+for $num in range(0,10)
+  [flex-shrink=\"{$num}\"]
+    flex-grow($num)
 
 // - SHRINK --------------------------------------------------------------------
 // This defines the ability for a flex item to shrink if necessary.
@@ -254,26 +221,6 @@
 
 // - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
-[fa-shrink="0"]
-  flex-shrink(0)
-
-[fa-shrink="1"]
-  flex-shrink(1)
-
-[fa-shrink="2"]
-  flex-shrink(2)
-
-[fa-shrink="3"]
-  flex-shrink(3)
-
-[fa-shrink="4"]
-  flex-shrink(4)
-
-[fa-shrink="5"]
-  flex-shrink(5)
-
-[fa-shrink="6"]
-  flex-shrink(6)
-
-[fa-shrink="7"]
-  flex-shrink(7)
+for $num in range(0,10)
+  [flex-shrink=\"{$num}\"]
+    flex-shrink($num)

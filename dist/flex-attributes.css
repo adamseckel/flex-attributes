@@ -378,57 +378,57 @@
   -ms-flex-line-pack: distribute;
   align-content: space-around;
 }
-[flex-shrink="0"] {
+[flex-grow="0"] {
   -webkit-flex-grow: 0;
   -ms-flex-grow: 0;
   flex-grow: 0;
 }
-[flex-shrink="1"] {
+[flex-grow="1"] {
   -webkit-flex-grow: 1;
   -ms-flex-grow: 1;
   flex-grow: 1;
 }
-[flex-shrink="2"] {
+[flex-grow="2"] {
   -webkit-flex-grow: 2;
   -ms-flex-grow: 2;
   flex-grow: 2;
 }
-[flex-shrink="3"] {
+[flex-grow="3"] {
   -webkit-flex-grow: 3;
   -ms-flex-grow: 3;
   flex-grow: 3;
 }
-[flex-shrink="4"] {
+[flex-grow="4"] {
   -webkit-flex-grow: 4;
   -ms-flex-grow: 4;
   flex-grow: 4;
 }
-[flex-shrink="5"] {
+[flex-grow="5"] {
   -webkit-flex-grow: 5;
   -ms-flex-grow: 5;
   flex-grow: 5;
 }
-[flex-shrink="6"] {
+[flex-grow="6"] {
   -webkit-flex-grow: 6;
   -ms-flex-grow: 6;
   flex-grow: 6;
 }
-[flex-shrink="7"] {
+[flex-grow="7"] {
   -webkit-flex-grow: 7;
   -ms-flex-grow: 7;
   flex-grow: 7;
 }
-[flex-shrink="8"] {
+[flex-grow="8"] {
   -webkit-flex-grow: 8;
   -ms-flex-grow: 8;
   flex-grow: 8;
 }
-[flex-shrink="9"] {
+[flex-grow="9"] {
   -webkit-flex-grow: 9;
   -ms-flex-grow: 9;
   flex-grow: 9;
 }
-[flex-shrink="10"] {
+[flex-grow="10"] {
   -webkit-flex-grow: 10;
   -ms-flex-grow: 10;
   flex-grow: 10;

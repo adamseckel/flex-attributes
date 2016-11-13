@@ -1,13 +1,15 @@
 {
   "name": "flex-attributes",
-  "version": "1.0.5",
-  "description": "A css library that allows you to compose flexbox layouts with attributes.",
+  "version": "2.0.0",
+  "description": "A css library that allows you to compose mobile first, adaptive flexbox layouts and grids with attributes.",
   "main": "flex-attributes.css",
   "keywords": [
     "css",
     "flexbox",
     "attributes",
-    "layout"
+    "layout",
+    "grid",
+    "bootstrap"
   ],
   "author": "hemlok",
   "license": "ISC",

@@ -1,0 +1,17 @@
+@import 'variables'
+
+// GRID
+$max-rows = 12
+$min-rows = 1
+$rows = range($min-rows, $max-rows)
+
+// Breakpoints
+[flex][row]
+  flex-basis(100%)
+
+  for $num in $rows
+    for $size, $breakpoint in $sizes
+      [col-{$size}-{$num}]
+        @media screen and (min-width: $breakpoint)
+          flex-basis(floor(percentage($num/$max-rows)))
+          flex-grow(1)

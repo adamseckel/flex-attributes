@@ -1,0 +1,55 @@
+@import 'variables'
+
+$primary-axis = center start end space-between space-around
+$secondary-axis = center start end stretch baseline
+
+// LAYOUT
+[flex]
+  flexbox(flex)
+  flex-wrap(nowrap)
+
+  &[column]
+    flexbox(flex)
+    flex-direction(column)
+    flex-wrap(nowrap)
+
+  &[row]
+    flexbox(flex)
+    flex-direction(row)
+    flex-wrap(nowrap)
+
+  for $direction in row column
+    for $size, $breakpoint in $sizes
+      &[column-{$size}]
+        @media screen and (min-width: $breakpoint)
+          flexbox(flex)
+          flex-direction($direction)
+          flex-wrap(nowrap)
+
+  &[wrap]
+    flex-wrap(wrap)
+
+  &[wrap="reverse"]
+    flex-wrap(wrap-reverse)
+
+  for $alignment in $primary-axis
+    &[layout=\"{$alignment}\"]
+      justify-content($alignment)
+
+  for $primary-alignment in $primary-axis
+    for $secondary-alignment in $secondary-axis
+      &[layout=\"{$primary-alignment} {$secondary-alignment}\"]
+        justify-content($primary-alignment)
+        align-items($secondary-alignment)
+
+for $prop in $primary-axis
+  [align=\"{$prop}\"]
+    align-content($prop)
+
+for $num in range(0,10)
+  [grow=\"{$num}\"]
+    flex-grow($num)
+
+for $num in range(0,10)
+  [shrink=\"{$num}\"]
+    flex-shrink($num)

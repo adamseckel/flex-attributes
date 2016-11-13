@@ -7,7 +7,7 @@ $rows = range($min-rows, $max-rows)
 
 // Breakpoints
 [flex][row]
-  
+
   for $num in $rows
     [grid-{$num}]
       flex-basis(floor(percentage($num/$max-rows)))

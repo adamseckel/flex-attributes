@@ -1,8 +1,23 @@
 Flex Attributes
 =============
 
-This library allows you to compose layout with flexbox in html. Containers
-are composed by combining `flex`, `column` or `row`, and `layout`. 
+This library allows you to compose layout with flexbox in html, allowing for rapid prototyping, easy visulization of layout in HTML, and reduced CSS footprint and duplication.
+
+Installation
+------------
+
+```
+npm install flex-attributes
+```
+
+Add, import, or require `flex-attributes/dist/flex-attributes.css` into your project.
+
+You can compile the source files with your own breakpoints in ./src/variables.styl with gulp build
+
+
+Examples
+------------
+Containers are composed by combining `flex`, `column` or `row`, and `layout`. 
 
 `layout` accepts 1 or 2 arguments, main axis (justify-content), then secondary axis (align-items).
 
@@ -28,12 +43,3 @@ Breakpoints (Bootstrap)
 `md` screens greater than 970px
 
 `lg` screens greater than 1170px
-
-Installation
-------------
-
-```
-npm install flex-attributes
-```
-
-Add, import, or require `flex-attributes/dist/flex-attributes.css` into your project.

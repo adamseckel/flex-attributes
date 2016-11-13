@@ -1,7 +1,7 @@
 Flex Attributes
 =============
 
-This library allows you to compose layout with flexbox in html, allowing for rapid prototyping, easy visulization of layout in HTML, and reduced CSS footprint and duplication.
+This library (1kb gzipped) allows you to compose layout with flexbox in html, allowing for rapid prototyping, easy visulization of layout in HTML, and reduced CSS footprint and duplication.
 
 Installation
 ------------

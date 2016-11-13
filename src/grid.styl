@@ -7,7 +7,12 @@ $rows = range($min-rows, $max-rows)
 
 // Breakpoints
 [flex][row]
-  flex-basis(100%)
+  
+  for $num in $rows
+    [grid-{$num}]
+      flex-basis(floor(percentage($num/$max-rows)))
+      flex-grow(1)
+      box-sizing border-box
 
   for $num in $rows
     for $size, $breakpoint in $sizes

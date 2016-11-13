@@ -43,3 +43,8 @@ Breakpoints (Bootstrap)
 `md` screens greater than 970px
 
 `lg` screens greater than 1170px
+
+Contributing
+------------
+
+Go fur it

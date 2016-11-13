@@ -5,5 +5,5 @@ var stylus = require('gulp-stylus');
 gulp.task('build', function () {
   return gulp.src('./src/flex-attributes.styl')
     .pipe(stylus())
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest('./'));
 });

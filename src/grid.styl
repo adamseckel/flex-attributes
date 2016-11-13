@@ -10,14 +10,14 @@ $rows = range($min-rows, $max-rows)
 
   for $num in $rows
     [grid-{$num}]
-      flex-basis(floor(percentage($num/$max-rows)))
-      flex-grow(1)
+      flex-basis floor(percentage($num/$max-rows))
+      flex-grow 1
       box-sizing border-box
 
   for $num in $rows
     for $size, $breakpoint in $sizes
       [grid-{$size}-{$num}]
         @media screen and (min-width: $breakpoint)
-          flex-basis(floor(percentage($num/$max-rows)))
-          flex-grow(1)
+          flex-basis floor(percentage($num/$max-rows))
+          flex-grow 1
           box-sizing border-box

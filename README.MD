@@ -10,10 +10,24 @@ Installation
 npm install flex-attributes
 ```
 
-Add, import, or require `flex-attributes/dist/flex-attributes.css` into your project.
+Add, import, or require `flex-attributes/flex-attributes.css` into your project.
 
-You can compile the source files with your own breakpoints in ./src/variables.styl with gulp build
+You can compile the source files with your own breakpoints, located ./src/variables.styl with `gulp`
 
+Attributes
+------------
+Containers: 
+`flex`
+`column`
+`row`
+`layout`
+`wrap`
+
+Children: 
+`grow`
+`shrink`
+`grid-*`
+`align`
 
 Examples
 ------------

@@ -20,13 +20,18 @@ Containers:
 `flex`
 `column`
 `row`
-`layout`
+`layout="space-between"`
+`layout="space-between center" (etc)` 
 `wrap`
+`wrap="nowrap || wrap-reverse"`
 
 Children: 
 `grow`
-`shrink`
-`grid-*`
+`grow="*" (0-10)`
+`shrink` 
+`shrink="*" (0-10)`
+`grid-* (1-12)` 
+`grid-sm-* (1-12)`
 `align`
 
 Examples

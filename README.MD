@@ -17,22 +17,22 @@ You can compile the source files with your own breakpoints, located ./src/variab
 Attributes
 ------------
 Containers: 
-`flex`
-`column`
-`row`
-`layout="space-between"`
-`layout="space-between center" (etc)` 
-`wrap`
-`wrap="nowrap || wrap-reverse"`
+* `flex`
+* `column`
+* `row`
+* `layout="space-between"`
+* `layout="space-between center" (etc)` 
+* `wrap`
+* `wrap="nowrap || wrap-reverse"`
 
 Children: 
-`grow`
-`grow="*" (0-10)`
-`shrink` 
-`shrink="*" (0-10)`
-`grid-* (1-12)` 
-`grid-sm-* (1-12)`
-`align`
+* `grow`
+* `grow="*" (0-10)`
+* `shrink` 
+* `shrink="*" (0-10)`
+* `grid-* (1-12)` 
+* `grid-sm-* (1-12)`
+* `align`
 
 Examples
 ------------

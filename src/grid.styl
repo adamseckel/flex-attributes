@@ -6,17 +6,18 @@ $min-rows = 1
 $rows = range($min-rows, $max-rows)
 
 // Breakpoints
-[flex][row]
-
+[flex][row],
+[data-flex][data-row]
   for $num in $rows
-    [grid-{$num}]
+    [grid-{$num}],
+    [data-grid-{$num}]
       flex-basis floor(percentage($num/$max-rows))
       flex-grow 1
       box-sizing border-box
 
   for $size, $breakpoint in $sizes
     for $num in $rows
-      [grid-{$size}-{$num}]
+      [grid-{$size}-{$num}], [data-grid-{$size}-{$num}]
         flex-grow 1
         box-sizing border-box
         @media screen and (min-width: $breakpoint)

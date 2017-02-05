@@ -25,7 +25,7 @@ $secondary-axis = center start end stretch baseline
     for $size, $breakpoint in $sizes
       &[column-{$size}],
       &[data-column-{$size}]
-        @media screen and (min-width: $breakpoint)
+        @media screen and (max-width: $breakpoint)
           display flex
           flex-direction $direction
 

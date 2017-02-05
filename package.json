@@ -1,6 +1,6 @@
 {
   "name": "flex-attributes",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "A css library that allows you to compose mobile first, adaptive flexbox layouts and grids with attributes.",
   "main": "flex-attributes.css",
   "keywords": [

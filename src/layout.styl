@@ -33,41 +33,50 @@ $secondary-axis = center start end stretch baseline
   &[data-wrap]
     flex-wrap wrap
 
-  &[wrap="reverse"],
-  &[data-wrap="reverse"]
+  &[wrap='reverse'],
+  &[data-wrap='reverse']
     flex-wrap wrap-reverse
 
   for $alignment in $primary-axis
-    &[data-layout=\"{$alignment}\"],
-    &[layout=\"{$alignment}\"]
-      justify-content $alignment
+    &[data-layout=\'{$alignment}\'],
+    &[layout=\'{$alignment}\']
+      if $alignment == start || $alignment == end
+        justify-content flex-+$alignment
+      else
+        justify-content $alignment
 
   for $primary-alignment in $primary-axis
     for $secondary-alignment in $secondary-axis
-      &[layout=\"{$primary-alignment} {$secondary-alignment}\"],
-      &[data-layout=\"{$primary-alignment} {$secondary-alignment}\"]
-        justify-content $primary-alignment
-        align-items $secondary-alignment
+      &[layout=\'{$primary-alignment} {$secondary-alignment}\'],
+      &[data-layout=\'{$primary-alignment} {$secondary-alignment}\']
+        if $primary-alignment == start || $primary-alignment == end
+          justify-content flex-+$primary-alignment
+        else
+          justify-content $primary-alignment
+        if $secondary-alignment == start || $secondary-alignment == end
+          align-items flex-+$secondary-alignment
+        else
+          align-items $secondary-alignment
 
 for $prop in $primary-axis
-  [data-align=\"{$prop}\"],
-  [align=\"{$prop}\"]
+  [data-align=\'{$prop}\'],
+  [align=\'{$prop}\']
     align-content $prop
 
 [grow],
 [data-grow]
   flex-grow 1
 
-for $num in range(0,10)
-  [grow=\"{$num}\"],
-  [data-grow=\"{$num}\"]
+for $num in range(0, 10)
+  [grow=\'{$num}\'],
+  [data-grow=\'{$num}\']
     flex-grow $num
 
 [shrink],
 [data-shrink]
   flex-shrink 1
 
-for $num in range(0,10)
-  [shrink=\"{$num}\"],
-  [data-shrink=\"{$num}\"]
+for $num in range(0, 10)
+  [shrink=\'{$num}\'],
+  [data-shrink=\'{$num}\']
     flex-shrink $num

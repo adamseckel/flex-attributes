@@ -20,5 +20,5 @@ $rows = range($min-rows, $max-rows)
       [grid-{$size}-{$num}], [data-grid-{$size}-{$num}]
         flex-grow 1
         box-sizing border-box
-        @media screen and (max-width: $breakpoint)
+        @media screen and (min-width: $breakpoint)
           flex-basis floor(percentage($num/$max-rows))

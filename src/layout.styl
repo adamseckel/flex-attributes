@@ -25,7 +25,7 @@ $secondary-axis = center start end stretch baseline
     for $size, $breakpoint in $sizes
       &[{$direction}-{$size}],
       &[data-{$direction}-{$size}]
-        @media screen and (max-width: $breakpoint)
+        @media screen and (min-width: $breakpoint)
           display flex
           flex-direction $direction
 
@@ -33,9 +33,23 @@ $secondary-axis = center start end stretch baseline
   &[data-wrap]
     flex-wrap wrap
 
+  for $size, $breakpoint in $sizes
+    @media screen and (min-width: $breakpoint)
+      &[wrap-{$size}],
+      &[data-wrap-{$size}]
+        @media screen and (min-width: $breakpoint)
+          flex-wrap wrap
+
   &[wrap='reverse'],
   &[data-wrap='reverse']
     flex-wrap wrap-reverse
+
+  for $size, $breakpoint in $sizes
+    @media screen and (min-width: $breakpoint)
+      &[wrap-{$size}='reverse'],
+      &[data-wrap-{$size}='reverse']
+        @media screen and (min-width: $breakpoint)
+          flex-wrap wrap-reverse
 
   for $alignment in $primary-axis
     &[data-layout=\'{$alignment}\'],
